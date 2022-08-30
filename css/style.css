@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Corinthia&family=Dancing+Script:wght@400;500&family=EB+Garamond:wght@400;500;600;700&family=Imperial+Script&family=Love+Light&family=Luxurious+Script&family=Montserrat:wght@300&family=Nanum+Brush+Script&family=Nanum+Myeongjo:wght@400;700&family=Open+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Poppins:ital,wght@0,400;0,500;0,600;1,300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@100&family=Style+Script&display=swap');
+
+:root {
+    --ngileg :'Style Script', cursive;
+    --polos :'Nanum Myeongjo', serif;
+    --orang : 'EB Garamond', serif;
+    --orange : rgb(71, 104, 49);
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: var(--polos);
+}
+
+.pondasi{
+    max-width:610px;
+    margin:0 auto;
+}
+
+header{
+    width:100%;
+}
+
+header .benner{
+    height:100vh;
+    position:relative;
+    background-image: url("../image/bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+header .benner .bunter{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+header .benner .bunter img{
+    width:420px;
+}
+
+content .containerr{
+    background-image: url("../image/bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+content .title h1{
+    font-family: var(--ngileg);
+    letter-spacing:2px;
+    font-size:46px;
+    text-align : center;
+    margin: 20px 0;
+    color:var(--orange)
+}
+
+content .deskripsi p{
+    text-align:center;
+    font-size: 17px;
+    font-style:italic;
+    letter-spacing:2px;
+    margin-bottom : 40px;
+    z-index:99;
+}
+
+content .orang{
+    text-align:center;
+    margin-bottom:20px;
+    border-radius:6px;
+    padding:5px;
+}
+content .orang h5{
+    font-size:26px;
+    color: var(--orange);
+    font-family:var(--orang)
+}
+
+content .orang p{
+    margin-top:20px;
+}
+
+.detailAcara{
+    background-image: url("../image/bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.detailAcara h1{
+    font-family: var(--ngileg);
+    letter-spacing:2px;
+    font-size:46px;
+    padding:20px 0;
+    text-align : center;
+    color:var(--orange)
+}
+
+.detailAcara .detail{
+    text-align:center;
+    color:var(--orange);
+}
+
+.detailAcara .detail{
+    border : 1px solid var(--orange);
+    width : 90%;
+    margin: 0 auto;
+    padding:20px;
+    border-radius:6px;
+}
+
+.detailAcara .detail h5{
+    font-family:var(--ngileg);
+    font-size:27px;
+    letter-spacing:2px;
+}
+
+.bi-calendar{
+    font-size:1.5em;
+    margin:10px 0;
+}
+
+.detailAcara .detail p{
+    font-weight:bold;
+}
+
+.bi-map-fill{
+    font-size:1.5em;
+    margin-bottom:20px;
+}
+
+.detailAcara .bungaAtas{
+    position:absolute;
+    top:50px;
+    left:-20px;
+}
+
+.detailAcara .bungaAtas img{
+    width:180px;
+}
+
+.detailAcara .bungaBawah{
+    position:absolute;
+    bottom:160px;
+    right:-20px;
+    transform:rotate(-10deg);
+}
+
+.detailAcara .bungaBawah img{
+    width:180px;
+}
+
+.detailAcara .menuju{
+    text-align:center;
+    width:90%;
+    margin:40px auto 0 auto;
+    padding:10px;
+}
+
+.detailAcara .menuju h5{
+    color : var(--orange);
+    font-family:var(--ngileg);
+    font-size:35px;
+}
+
+.detailAcara .row {
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:20px;
+}
+
+.detailAcara .row .col{
+    background-color:var(--orange);
+    color:#fff;
+    margin:5px 10px;
+    padding:10px 10px;
+    border-radius:6px;
+}
+
+.lokasi{
+    background-image: url("../image/bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.lokasi h5{
+    color : var(--orange);
+    font-family:var(--ngileg);
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.lokasi #map{
+    width:100%;
+}
+
+.lokasi a{
+    text-decoration:none;
+    display:block;
+    color:#fff;
+    background-color:var(--orange);
+    width:fit-content;
+    padding:6px 16px;
+    border-radius:6px;
+    margin:30px auto;
+    transition:1s ease all;
+    border:1px solid var(--orange);
+}
+
+.lokasi a:hover{
+   transform:scale(1.1);
+   color:var(--orange);
+   background-color: #fff;
+}
+
+button{
+    color:#fff;
+    background-color:var(--orange);
+    width:fit-content;
+    padding:6px 16px;
+    border-radius:13px;
+    transition:1s ease all;
+    outline: none;
+    border:none;
+    border:1px solid var(--orange);
+}
+
+button:hover{
+   transform:scale(1.1);
+   color:var(--orange);
+   background-color: #fff;
+}
+.ucapan{
+    background-image: url("../image/bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.ucapan h5{
+    color : var(--orange);
+    font-family:var(--ngileg);
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.ucapan [type="text"] , .ucapan select{
+    margin-bottom : 30px;
+    width:90%;
+    padding:5px;
+    border-radius:6px;
+    outline:none;
+    border:none;
+    border:1px solid var(--orange);
+}
+
+.ucapan a{
+    text-decoration:none;
+    display:block;
+    color:#fff;
+    background-color:var(--orange);
+    width:fit-content;
+    padding:6px 16px;
+    border-radius:6px;
+    margin:5px 20px;
+    transition:1s ease all;
+}
+
+.ucapan a:hover{
+    transform:scale(1.1);
+    color:var(--orange);
+}
+
+.komentar{
+    width:90%;
+    margin:10px auto;
+    height:350px;
+    overflow:scroll;
+}
+
+.komentar .box{
+    width:80%;
+    margin:20px auto;
+    background-color:#fff;
+    padding:5px 10px;
+    border-radius:6px;
+    box-shadow:0px 2px 3px rgba(0,0,0,.3);
+    display:flex;
+}
+
+.komentar .box .kiri{
+    /* display:flex;
+    align-items:center;  */
+   margin :10px 10px 0 0;
+   box-shadow:0px 2px 3px rgba(0,0,0,.3);
+   height:fit-content;
+   padding:5px 5px 0 5px;
+   border-radius:50%;
+}
+
+.komentar span{
+    background-color:var(--orange);
+    color:#fff;
+    border-radius:6px;
+    padding:5px;
+    font-size:0.6em;
+    font-weight:bold
+}
+
+.komentar strong{
+    font-weight:bold;
+    font-size:0.9em;
+}
+
+.komentar p{
+    font-size:0.8em;
+}
+
+.las{
+    background-image: url("../image/bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+.las h5{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 40px;
+}
+
+.las h4{
+    text-align: center;
+    font-family: var(--ngileg);
+    font-style: italic;
+    font-size: 35px;
+    color: var(--orange);
+}
+
+.welcome.geser{
+    transform:translate(-100%,0);
+}
+
+.welcome{
+    transform:translate(0,0);
+    transition: 3s ease all;
+    position:fixed;
+    background-color:#ffff;
+    z-index:99999;
+    display:flex;
+    width:100%;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-image: url("../image/pop-up.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+footer{
+    background-color: var(--orange);
+    padding: 10px 0 5px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--polos);
+    text-align: center;
+}
+
+.sukses p{
+    background-color: var(--orange);
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+.sukses p.show{
+display: block;
+}
+
+
+.welcome h3{
+    font-weight:bold;
+    font-size:24px;
+}
+
+.welcome h1{
+    font-family:var(--ngileg);
+    color:var(--orange);
+    font-size:46px;
+    margin:20px;
+    letter-spacing:2px;
+    font-style:italic;
+}
+
+.welcome h5{
+    font-weight:bold;
+    font-style:italic;
+}
+
+.welcome a{
+    text-decoration:none;
+    display:block;
+    color:#fff;
+    background-color:var(--orange);
+    width:fit-content;
+    padding:6px 16px;
+    border-radius:6px;
+    margin:10px auto;
+    transition:1s ease all;
+    border:1px solid var(--orange)
+}
+
+.welcome a:hover{
+    transform:scale(1.1);
+    color:var(--orange);
+    background-color:var(--putih);
+}
+
+.music{
+    display:none;
+}
+
+.stop{
+    position:fixed;
+    bottom:30px;
+    right:90px;
+    z-index:999;
+}
+
+.stop .bi-pause-fill{
+    background-color:var(--orange);
+    color:#fff;
+    font-size:2em;
+    border-radius:50%;
+    padding:5px;
+    cursor:pointer;
+}
+
+/* jquery clas om */
+.om{
+    transform:translate(0,-100px);
+    opacity:0;
+    transition:1.5s ease all;
+}
+
+.om.aktif{
+    transform:translate(0,0);
+    opacity:1;
+}
+
+/* jquery clas om */
+
+ /* jquery clas deskripsi  */
+.deskripsi{
+    transform:translate(0,-100px);
+    opacity:0;
+    transition:1.5s ease all;
+}
+
+.deskripsi.aktif1{
+    transform:translate(0,0);
+    opacity:1;
+}
+ /* jquery clas deskripsi  */
+
+  /* jquery clas orang1  */
+  .orang1{
+    transform:translate(0,-100px);
+    opacity:0;
+    transition:1.5s ease all;
+}
+
+.orang1.aktif2{
+    transform:translate(0,0);
+    opacity:1;
+}
+  /* jquery clas orang1  */
+
+    /* jquery clas orang2  */
+  .orang2{
+    transform:translate(0,-100px);
+    opacity:0;
+    transition:1.5s ease all;
+}
+
+.orang2.aktif3{
+    transform:translate(0,0);
+    opacity:1;
+}
+  /* jquery clas orang2  */
+
+  /* jquery clas orang3  */
+  .orang3{
+    transform:translate(0,-100px);
+    opacity:0;
+    transition:1.5s ease all;
+}
+
+.orang3.aktif4{
+    transform:translate(0,0);
+    opacity:1;
+}
+  /* jquery clas orang3  */
+
+    /* jquery clas orang4  */
+    .orang4{
+        transform:translate(0,-100px);
+        opacity:0;
+        transition:1.5s ease all;
+    }
+    
+    .orang4.aktif5{
+        transform:translate(0,0);
+        opacity:1;
+    }
+      /* jquery clas orang4  */
+
+    /* jquery clas detail  */
+    .detailAcara{
+        transform:translate(0,-100px);
+        opacity:0;
+        transition:1.5s ease all;
+    }
+    
+    .detailAcara.aktif6{
+        transform:translate(0,0);
+        opacity:1;
+    }
+      /* jquery clas detail  */
+
+     /* jquery clas menuju  */
+    .menujuAcara{
+        transform:translate(0,-100px);
+        opacity:0;
+        transition:1.5s ease all;
+    }
+    
+    .menujuAcara.aktif7{
+        transform:translate(0,0);
+        opacity:1;
+    }
+      /* jquery clas menuju  */
+
+         /* jquery clas lokasi  */
+         .tLokasi{
+            transform:translate(0,-100px);
+            opacity:0;
+            transition:1.5s ease all;
+        }
+        
+        .tLokasi.aktif8{
+            transform:translate(0,0);
+            opacity:1;
+        }
+          /* jquery clas lokasi  */
+        
+        
+         /* jquery clas peta  */
+        #map{
+            transform:translate(0,-100px);
+            opacity:0;
+            transition:1.5s ease all;
+        }
+        
+        #map.aktif9{
+            transform:translate(0,0);
+            opacity:1;
+        }
+          /* jquery clas peta  */
+        
+          .box{
+            opacity:0;
+            transform:scale(0.8);
+            transition:2s ease all;
+          }
+          .box.pop-up{
+            opacity:1;
+            transform:scale(1.2);
+          }
+
+         .time{
+            transform:translate(0,-100px);
+            opacity:0;
+            transition:1.5s ease all;
+        }
+        
+       .time.akti11{
+            transform:translate(0,0);
+            opacity:1;
+        }
+        
+        .ucapan{
+           transform:translate(-100px,0);
+           opacity:0;
+           transition:1.5s ease all;
+       }
+       
+      .ucapan.akti12{
+           transform:translate(0,0);
+           opacity:1;
+       }
+/* 
+        .komentar{
+           transform:translate(-100px,0);
+           opacity:0;
+           transition:1.5s ease all;
+       }
+       
+      .komentar.akti13{
+           transform:translate(0,0);
+           opacity:1;
+       } */
+
